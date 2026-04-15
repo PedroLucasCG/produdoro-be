@@ -1,3 +1,13 @@
+server:
+  serverlet:
+    context-path: /produdoro/api
+
 spring:
   application:
     name: produdoro
+  data:
+    mongodb:
+      auto-index-creation: true
+  mongodb:
+    uri: ${MONGO_DB_URI:mongodb+srv://pedrolucascg:YGJXuZAhRVo0c3Rd@cluster0.u7qev32.mongodb.net/wakanda?appName=Cluster0}
+    authentication-database: admin
