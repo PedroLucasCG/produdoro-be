@@ -1,5 +1,5 @@
 server:
-  serverlet:
+  servlet:
     context-path: /produdoro/api
 
 spring:
@@ -11,3 +11,11 @@ spring:
   mongodb:
     uri: ${MONGO_DB_URI:mongodb+srv://pedrolucascg:YGJXuZAhRVo0c3Rd@cluster0.u7qev32.mongodb.net/wakanda?appName=Cluster0}
     authentication-database: admin
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /public/swagger
+  api-docs:
+    enabled: true
+    path: /v1/api-docs
